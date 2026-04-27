@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebCraft Studio — Landing Page</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header__inner">
+            <a href="#home" class="logo">
+                <span class="logo__icon">◆</span>
+                WebCraft
+            </a>
+
+            <nav class="nav" aria-label="Главная навигация">
+                <a href="#home" class="nav__link">Home</a>
+                <a href="#about" class="nav__link">About</a>
+                <a href="#services" class="nav__link">Services</a>
+                <a href="#contact" class="nav__link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="container hero__content">
+                <p class="hero__label">Frontend Landing Page</p>
+                <h1 class="hero__title">Создаём современные сайты для сильного первого впечатления</h1>
+                <p class="hero__subtitle">
+                    Адаптивная верстка, чистый код, удобный интерфейс и стильный дизайн —
+                    всё, что нужно для качественного одностраничного сайта.
+                </p>
+                <a href="#contact" class="button">Связаться с нами</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <div class="container about__grid">
+                <div class="about__image" aria-label="Рабочее место веб-разработчика"></div>
+
+                <div class="about__content">
+                    <p class="section__label">About us</p>
+                    <h2 class="section__title">О нашей студии</h2>
+                    <p class="about__text">
+                        WebCraft Studio помогает компаниям и начинающим проектам создавать понятные,
+                        быстрые и красивые веб-страницы. Мы уделяем внимание не только внешнему виду,
+                        но и структуре сайта: правильной HTML-семантике, удобной навигации,
+                        адаптивности и читаемости текста на разных устройствах. Каждый блок страницы
+                        продумывается так, чтобы пользователь легко находил нужную информацию,
+                        понимал преимущества продукта и мог быстро оставить заявку через форму связи.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services section" id="services">
+            <div class="container">
+                <p class="section__label section__label--center">Services</p>
+                <h2 class="section__title section__title--center">Наши услуги</h2>
+
+                <div class="services__grid">
+                    <article class="service-card">
+                        <div class="service-card__icon">💻</div>
+                        <h3 class="service-card__title">HTML5 верстка</h3>
+                        <p class="service-card__text">
+                            Создаём семантическую структуру страниц с чистым и понятным кодом.
+                        </p>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-card__icon">🎨</div>
+                        <h3 class="service-card__title">CSS3 дизайн</h3>
+                        <p class="service-card__text">
+                            Используем Flexbox, Grid, анимации и hover-эффекты без CSS-библиотек.
+                        </p>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-card__icon">📱</div>
+                        <h3 class="service-card__title">Адаптивность</h3>
+                        <p class="service-card__text">
+                            Настраиваем корректное отображение сайта на desktop, tablet и mobile.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="container contact__grid">
+                <div class="contact__info">
+                    <p class="section__label">Contact</p>
+                    <h2 class="section__title">Свяжитесь с нами</h2>
+                    <p class="contact__text">
+                        Оставьте сообщение, и мы поможем создать современный landing page для вашего проекта.
+                    </p>
+
+                    <div class="contact__item">
+                        <strong>Email:</strong>
+                        <a href="mailto:info@webcraft.kz">info@webcraft.kz</a>
+                    </div>
+
+                    <div class="contact__item">
+                        <strong>Телефон:</strong>
+                        <a href="tel:+77001234567">+7 700 123 45 67</a>
+                    </div>
+                </div>
+
+                <form class="form" action="#" method="post">
+                    <label class="form__label" for="name">Имя</label>
+                    <input class="form__input" type="text" id="name" name="name" placeholder="Введите имя" required>
+
+                    <label class="form__label" for="email">Email</label>
+                    <input class="form__input" type="email" id="email" name="email" placeholder="example@mail.com" required>
+
+                    <label class="form__label" for="message">Сообщение</label>
+                    <textarea class="form__input form__textarea" id="message" name="message" placeholder="Ваше сообщение" required></textarea>
+
+                    <button class="button form__button" type="submit">Отправить</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p class="footer__copy">© 2026 WebCraft Studio. Все права защищены.</p>
+            <div class="footer__socials">
+                <a href="#" class="footer__link">Instagram</a>
+                <a href="#" class="footer__link">Telegram</a>
+                <a href="#" class="footer__link">GitHub</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
